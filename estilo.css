@@ -17,13 +17,15 @@ html,body{
 /*Header*/
 
 .center{
-    width: 1280px;
+    max-width: 1280;
+    width: 100%px;
     margin: 0 auto;
     padding: 0 2%;
 }
 
 .header{
-    min-width: 1200px;
+    min-width: 100%px;
+    padding: 0.2%;
     width: 100%;
     height: 70px;
     background-color: #212343;
@@ -37,7 +39,7 @@ html,body{
 
 .container-banner{
     width: 100%;
-    min-width: 1200px;
+    padding: 0 2%;
     height: 557px;
     background-image: url(imagens/header_bg.png);
     background-size: cover;
@@ -147,8 +149,7 @@ html,body{
 /*Formatação do container 2*/
 
 .container-2{
-    min-width: 1200px;
-    padding: 40px 0;
+    padding: 40px 2%;
     background-color:#DDDDDD;
     text-align: center;
 }
@@ -158,7 +159,8 @@ html,body{
 }
 
 .container-2 p{
-    width: 698px;
+    max-width:768px ;
+    width: 100%;
     margin: 15px 0;
     display: inline-block;
     text-align: justify;
@@ -179,7 +181,7 @@ html,body{
 /*Formatação do container 3*/
 
 .container-3{
-    padding: 90px 0;
+    padding: 90px 2%;
 }
 
 .container-3 h2{
@@ -216,6 +218,84 @@ html,body{
 .footer p{
     margin-top: 8px;
     color: #212343;
+}
+
+@media screen and (max-width: 1024px){
+    .header{
+        height: auto;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .header img{
+        margin: 0;
+    }
+
+    .box-container{
+        float: left;
+        width: 40%;
+        max-width:500px ;
+        height: auto;
+        padding: 30px 0;
+        display: inline-block;
+        margin-top: 30px;
+    }
+
+    .container-banner{
+        width: 100%;
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .form{
+        padding: 10px;
+        max-width: 400px;
+        width: 60%;
+        height:100%;
+        float: right;
+        top: 0;
+      
+    }
+
+    .input-container input[type=text]{
+        width: 100%;
+        height: 55px;
+    }
+    
+    .form input[type=submit]{
+        max-width: 280px;
+        height: 56px;
+        width: 100%;
+    }
+    
+    
+}
+
+@media screen and (max-width:768px){
+    .box-container{
+        margin-top: 0;
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .form{
+        float: none;
+        display: inline-block;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .container-single{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        max-width: 600px;
+        padding: 30px 0;
+    }
+    
 }
 
 
